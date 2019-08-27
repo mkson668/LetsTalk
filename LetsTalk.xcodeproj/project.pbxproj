@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		288EDC84053397D06D997AF2 /* Pods_LetsTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF08EEE3E3C2ACA76ED94641 /* Pods_LetsTalk.framework */; };
 		93694BBD2314F04D00F9C07E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93694BBC2314F04C00F9C07E /* AppDelegate.swift */; };
-		93694BBF2314F04D00F9C07E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93694BBE2314F04D00F9C07E /* ViewController.swift */; };
 		93694BC22314F04D00F9C07E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93694BC02314F04D00F9C07E /* Main.storyboard */; };
 		93694BC42314F04D00F9C07E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93694BC32314F04D00F9C07E /* Assets.xcassets */; };
 		93694BC72314F04D00F9C07E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93694BC52314F04D00F9C07E /* LaunchScreen.storyboard */; };
+		93694BCF23151ED900F9C07E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93694BCE23151ED900F9C07E /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6757FE4D58CCB0993DCBCF3D /* Pods-LetsTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsTalk.release.xcconfig"; path = "Target Support Files/Pods-LetsTalk/Pods-LetsTalk.release.xcconfig"; sourceTree = "<group>"; };
 		93694BB92314F04C00F9C07E /* LetsTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93694BBC2314F04C00F9C07E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		93694BBE2314F04D00F9C07E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		93694BC12314F04D00F9C07E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93694BC32314F04D00F9C07E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93694BC62314F04D00F9C07E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93694BC82314F04D00F9C07E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93694BCE23151ED900F9C07E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B34A55507C872588821EDBF8 /* Pods-LetsTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsTalk.debug.xcconfig"; path = "Target Support Files/Pods-LetsTalk/Pods-LetsTalk.debug.xcconfig"; sourceTree = "<group>"; };
+		FF08EEE3E3C2ACA76ED94641 /* Pods_LetsTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				288EDC84053397D06D997AF2 /* Pods_LetsTalk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00493A313E57D8BA5EAAA10E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF08EEE3E3C2ACA76ED94641 /* Pods_LetsTalk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F679FF582FA756454511A12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B34A55507C872588821EDBF8 /* Pods-LetsTalk.debug.xcconfig */,
+				6757FE4D58CCB0993DCBCF3D /* Pods-LetsTalk.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		93694BB02314F04C00F9C07E = {
 			isa = PBXGroup;
 			children = (
 				93694BBB2314F04C00F9C07E /* LetsTalk */,
 				93694BBA2314F04C00F9C07E /* Products */,
+				8F679FF582FA756454511A12 /* Pods */,
+				00493A313E57D8BA5EAAA10E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +80,11 @@
 			isa = PBXGroup;
 			children = (
 				93694BBC2314F04C00F9C07E /* AppDelegate.swift */,
-				93694BBE2314F04D00F9C07E /* ViewController.swift */,
 				93694BC02314F04D00F9C07E /* Main.storyboard */,
 				93694BC32314F04D00F9C07E /* Assets.xcassets */,
 				93694BC52314F04D00F9C07E /* LaunchScreen.storyboard */,
 				93694BC82314F04D00F9C07E /* Info.plist */,
+				93694BCE23151ED900F9C07E /* WelcomeViewController.swift */,
 			);
 			path = LetsTalk;
 			sourceTree = "<group>";
@@ -71,9 +96,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93694BCB2314F04D00F9C07E /* Build configuration list for PBXNativeTarget "LetsTalk" */;
 			buildPhases = (
+				485C837BE699F8FAEE9EC2E3 /* [CP] Check Pods Manifest.lock */,
 				93694BB52314F04C00F9C07E /* Sources */,
 				93694BB62314F04C00F9C07E /* Frameworks */,
 				93694BB72314F04C00F9C07E /* Resources */,
+				6BA5CCE1793D98529D965549 /* [CP] Embed Pods Frameworks */,
+				025A3DC203A5F6FF70157550 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +158,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		025A3DC203A5F6FF70157550 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LetsTalk/Pods-LetsTalk-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LetsTalk/Pods-LetsTalk-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LetsTalk/Pods-LetsTalk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		485C837BE699F8FAEE9EC2E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LetsTalk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BA5CCE1793D98529D965549 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LetsTalk/Pods-LetsTalk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LetsTalk/Pods-LetsTalk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LetsTalk/Pods-LetsTalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		93694BB52314F04C00F9C07E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93694BBF2314F04D00F9C07E /* ViewController.swift in Sources */,
 				93694BBD2314F04D00F9C07E /* AppDelegate.swift in Sources */,
+				93694BCF23151ED900F9C07E /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +367,7 @@
 		};
 		93694BCC2314F04D00F9C07E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B34A55507C872588821EDBF8 /* Pods-LetsTalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +386,7 @@
 		};
 		93694BCD2314F04D00F9C07E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6757FE4D58CCB0993DCBCF3D /* Pods-LetsTalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
