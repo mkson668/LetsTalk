@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,99 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LetsTalk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FwS-QF-aJE">
+                                <rect key="frame" x="53" y="306" width="308" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asT-cK-h40">
+                                <rect key="frame" x="0.0" y="179" width="414" height="67"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="LetsTalk">
+                                        <attributes>
+                                            <color key="NSColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="57" name="HelveticaNeue-UltraLightItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MdE-5g-cpo">
+                                <rect key="frame" x="53" y="352.5" width="308" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ts-sa-JUd">
+                                <rect key="frame" x="53" y="399" width="308" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oz3-05-drm">
+                                <rect key="frame" x="0.0" y="487" width="414" height="41.5"/>
+                                <color key="backgroundColor" red="1" green="0.77098537700000003" blue="0.94181147970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Register">
+                                            <attributes>
+                                                <font key="NSFont" size="25" name="HelveticaNeue-Thin"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aLa-qN-BXN">
+                                <rect key="frame" x="0.0" y="536.5" width="414" height="41.5"/>
+                                <color key="backgroundColor" red="0.2682191135209554" green="0.94223427071181454" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Login">
+                                            <attributes>
+                                                <font key="NSFont" size="25" name="HelveticaNeue-Thin"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MdE-5g-cpo" firstAttribute="top" secondItem="FwS-QF-aJE" secondAttribute="bottom" constant="16.5" id="4Cw-La-6ch"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8ts-sa-JUd" secondAttribute="trailing" constant="53" id="7hv-eV-302"/>
+                            <constraint firstItem="8ts-sa-JUd" firstAttribute="top" secondItem="MdE-5g-cpo" secondAttribute="bottom" constant="16.5" id="FZq-eB-jtq"/>
+                            <constraint firstItem="asT-cK-h40" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="H8S-Mf-7Lk"/>
+                            <constraint firstItem="MdE-5g-cpo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="OZR-2C-FSO"/>
+                            <constraint firstItem="FwS-QF-aJE" firstAttribute="top" secondItem="asT-cK-h40" secondAttribute="bottom" constant="60" id="PRe-3E-7Ic"/>
+                            <constraint firstItem="asT-cK-h40" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c0R-Gm-URs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MdE-5g-cpo" secondAttribute="trailing" constant="53" id="e8g-Yk-Imx"/>
+                            <constraint firstItem="asT-cK-h40" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="135" id="ftz-By-Ioc"/>
+                            <constraint firstItem="aLa-qN-BXN" firstAttribute="top" secondItem="oz3-05-drm" secondAttribute="bottom" constant="8" id="gbS-ag-KQa"/>
+                            <constraint firstItem="oz3-05-drm" firstAttribute="top" secondItem="8ts-sa-JUd" secondAttribute="bottom" constant="58" id="h7Z-Z8-K2b"/>
+                            <constraint firstItem="8ts-sa-JUd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="hj2-zl-fp2"/>
+                            <constraint firstItem="aLa-qN-BXN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="i4F-Ub-eLQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FwS-QF-aJE" secondAttribute="trailing" constant="53" id="koX-ND-PVu"/>
+                            <constraint firstItem="oz3-05-drm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="krZ-Lj-dfs"/>
+                            <constraint firstItem="FwS-QF-aJE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="oho-PT-Chr"/>
+                            <constraint firstItem="oz3-05-drm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qG3-b4-nHw"/>
+                            <constraint firstItem="aLa-qN-BXN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rbZ-ck-bVk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
         </scene>
     </scenes>
 </document>
