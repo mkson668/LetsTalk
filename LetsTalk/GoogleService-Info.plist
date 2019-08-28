@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>903183891812-8f50eu56c0423c48n5ok63m0gpfjn2cd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.903183891812-8f50eu56c0423c48n5ok63m0gpfjn2cd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAPQk5TqAi_qKyBieV3OmekumHBDjhbEXg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>903183891812</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.aw.LetsTalk</string>
+	<key>PROJECT_ID</key>
+	<string>letschat-cad57</string>
+	<key>STORAGE_BUCKET</key>
+	<string>letschat-cad57.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:903183891812:ios:7826d1fabe8ebd99</string>
+	<key>DATABASE_URL</key>
+	<string>https://letschat-cad57.firebaseio.com</string>
+</dict>
+</plist>
