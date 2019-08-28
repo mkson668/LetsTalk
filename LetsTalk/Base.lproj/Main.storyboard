@@ -116,7 +116,7 @@
                         <outlet property="confirmPasswordTextField" destination="8ts-sa-JUd" id="nxJ-o7-nlX"/>
                         <outlet property="passwordTextField" destination="MdE-5g-cpo" id="hdF-tv-8kw"/>
                         <outlet property="userNameTextField" destination="FwS-QF-aJE" id="aw8-J4-Nv7"/>
-                        <segue destination="2g8-eD-LPm" kind="presentation" id="ExZ-f9-UYV"/>
+                        <segue destination="2g8-eD-LPm" kind="show" identifier="welcomeToFinishReg" id="Uig-b2-sLZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

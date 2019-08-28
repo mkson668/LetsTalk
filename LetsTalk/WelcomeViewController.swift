@@ -73,12 +73,17 @@ class WelcomeViewController: UIViewController {
     
     func registerUser() {
         print("registering right now")
+        
+        // identifier is the segue name this performs the transition
+        // performSegue(withIdentifier: "welcomeToFinishReg", sender: self)
+        dismissKeyboard()
+        clearTextFields()
     }
     // 
     func dismissKeyboard() {
-        //self.view.endEditing(false)
-        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
-        view.addGestureRecognizer(tap)
+        self.view.endEditing(false)
+        //let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
+        //view.addGestureRecognizer(tap)
     }
     
     func clearTextFields() {
@@ -92,7 +97,16 @@ class WelcomeViewController: UIViewController {
         clearTextFields()
         dismissKeyboard()
         
-        print("show app")
         // show app here
+    }
+    
+    // to transfer data from one view to another we use this
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // we should do this because this view might have many segues
+        if segue.identifier == "welcomeToFinishReg" {
+            let viewController = segue.destination as! FinishRegistrationViewController
+            viewController.email = userNameTextField.text!
+            viewController.password = passwordTextField.text!
+        }
     }
 }
