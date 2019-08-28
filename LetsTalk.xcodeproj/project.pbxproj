@@ -18,6 +18,7 @@
 		93694BD5231550F800F9C07E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93694BD4231550F800F9C07E /* Constants.swift */; };
 		93694BD72316019C00F9C07E /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93694BD62316019C00F9C07E /* FCollectionReference.swift */; };
 		93694BD92316038900F9C07E /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93694BD82316038900F9C07E /* HelperFunctions.swift */; };
+		93694BDB23166BEC00F9C07E /* FinishRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93694BDA23166BEC00F9C07E /* FinishRegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		93694BD4231550F800F9C07E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		93694BD62316019C00F9C07E /* FCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
 		93694BD82316038900F9C07E /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		93694BDA23166BEC00F9C07E /* FinishRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishRegistrationViewController.swift; sourceTree = "<group>"; };
 		B34A55507C872588821EDBF8 /* Pods-LetsTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsTalk.debug.xcconfig"; path = "Target Support Files/Pods-LetsTalk/Pods-LetsTalk.debug.xcconfig"; sourceTree = "<group>"; };
 		FF08EEE3E3C2ACA76ED94641 /* Pods_LetsTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,17 +92,34 @@
 			children = (
 				93694BBC2314F04C00F9C07E /* AppDelegate.swift */,
 				93694BC02314F04D00F9C07E /* Main.storyboard */,
-				93694BD223154EB000F9C07E /* FUser.swift */,
-				93694BD4231550F800F9C07E /* Constants.swift */,
+				93694BDD23166D3700F9C07E /* Classes */,
 				93694BC32314F04D00F9C07E /* Assets.xcassets */,
 				93694BC52314F04D00F9C07E /* LaunchScreen.storyboard */,
 				93694BC82314F04D00F9C07E /* Info.plist */,
-				93694BD82316038900F9C07E /* HelperFunctions.swift */,
+				93694BDE23166D4A00F9C07E /* Helpers */,
 				93694BD023154B9000F9C07E /* GoogleService-Info.plist */,
 				93694BCE23151ED900F9C07E /* WelcomeViewController.swift */,
-				93694BD62316019C00F9C07E /* FCollectionReference.swift */,
+				93694BDA23166BEC00F9C07E /* FinishRegistrationViewController.swift */,
 			);
 			path = LetsTalk;
+			sourceTree = "<group>";
+		};
+		93694BDD23166D3700F9C07E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				93694BD223154EB000F9C07E /* FUser.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		93694BDE23166D4A00F9C07E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				93694BD62316019C00F9C07E /* FCollectionReference.swift */,
+				93694BD4231550F800F9C07E /* Constants.swift */,
+				93694BD82316038900F9C07E /* HelperFunctions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +261,7 @@
 				93694BCF23151ED900F9C07E /* WelcomeViewController.swift in Sources */,
 				93694BD72316019C00F9C07E /* FCollectionReference.swift in Sources */,
 				93694BD5231550F800F9C07E /* Constants.swift in Sources */,
+				93694BDB23166BEC00F9C07E /* FinishRegistrationViewController.swift in Sources */,
 				93694BD92316038900F9C07E /* HelperFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

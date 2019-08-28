@@ -60,6 +60,15 @@ class WelcomeViewController: UIViewController {
     
     func loginUser() {
         print("logging in right now")
+        ProgressHUD.show("logging in")
+        FUser.loginUserWith(email: userNameTextField.text!, password: passwordTextField.text!) { (error) in
+            if error != nil {
+                // localizedDescription returns human readible error
+                ProgressHUD.showError(error!.localizedDescription)
+                return
+            }
+            self.goToApp()
+        }
     }
     
     func registerUser() {
@@ -76,5 +85,14 @@ class WelcomeViewController: UIViewController {
         userNameTextField.text = ""
         passwordTextField.text = ""
         confirmPasswordTextField.text = ""
+    }
+    
+    func goToApp() {
+        ProgressHUD.dismiss()
+        clearTextFields()
+        dismissKeyboard()
+        
+        print("show app")
+        // show app here
     }
 }
