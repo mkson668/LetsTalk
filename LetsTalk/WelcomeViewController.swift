@@ -94,6 +94,12 @@ class WelcomeViewController: UIViewController {
         ProgressHUD.dismiss()
         clearTextFields()
         dismissKeyboard()
+    
+        
+        // name is Main because "Main.sotryBoard" by default. then you have to instaitate the view controller with the identifier (tabbarcontroller in this case)
+        let mainView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainApplication") as! UITabBarController
+        
+        self.present(mainView, animated: true, completion: nil)
         
         // show app here
     }

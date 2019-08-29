@@ -82,7 +82,7 @@ class FinishRegistrationViewController: UIViewController {
     func registerUser() {
         
         let fullName = nameTextField.text! + " " + surnameTextField.text!
-        var tempDictionary: Dictionary = [kFIRSTNAME: nameTextField.text!, kLASTNAME: surnameTextField.text!, kFULLNAME: fullName, kCOUNTER: countryTextField.text!, kCITY:cityTextField.text!, kPHONE: phoneNumberTextField.text!] as [String: Any]
+        var tempDictionary: Dictionary = [kFIRSTNAME: nameTextField.text!, kLASTNAME: surnameTextField.text!, kFULLNAME: fullName, kCOUNTRY: countryTextField.text!, kCITY:cityTextField.text!, kPHONE: phoneNumberTextField.text!] as [String: Any]
         
         if avatarImage == nil {
             imageFromInitials(firstName: nameTextField.text, lastName: surnameTextField.text) {
@@ -118,7 +118,19 @@ class FinishRegistrationViewController: UIViewController {
                 return
             }
             ProgressHUD.dismiss()
-            //go to applicatio
+            //go to application main screen
+            self.goToApp()
         }
+    }
+    
+    func goToApp() {
+
+        clearTextFields()
+        dismissKeyboard()
+        
+        // name is Main because "Main.sotryBoard" by default. then you have to instaitate the view controller with the identifier (tabbarcontroller in this case)
+        let mainView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainApplication") as! UITabBarController
+        
+        self.present(mainView, animated: true, completion: nil)
     }
 }
