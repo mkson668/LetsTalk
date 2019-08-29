@@ -75,15 +75,13 @@ class WelcomeViewController: UIViewController {
         print("registering right now")
         
         // identifier is the segue name this performs the transition
-        // performSegue(withIdentifier: "welcomeToFinishReg", sender: self)
+        performSegue(withIdentifier: "welcometoregistration", sender: self)
         dismissKeyboard()
         clearTextFields()
     }
     // 
     func dismissKeyboard() {
         self.view.endEditing(false)
-        //let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
-        //view.addGestureRecognizer(tap)
     }
     
     func clearTextFields() {
@@ -103,10 +101,10 @@ class WelcomeViewController: UIViewController {
     // to transfer data from one view to another we use this
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // we should do this because this view might have many segues
-        if segue.identifier == "welcomeToFinishReg" {
+        if segue.identifier == "welcometoregistration" {
             let viewController = segue.destination as! FinishRegistrationViewController
-            viewController.email = userNameTextField.text!
-            viewController.password = passwordTextField.text!
+            viewController.email = userNameTextField.text
+            viewController.password = passwordTextField.text
         }
     }
 }

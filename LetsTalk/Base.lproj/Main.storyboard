@@ -116,7 +116,7 @@
                         <outlet property="confirmPasswordTextField" destination="8ts-sa-JUd" id="nxJ-o7-nlX"/>
                         <outlet property="passwordTextField" destination="MdE-5g-cpo" id="hdF-tv-8kw"/>
                         <outlet property="userNameTextField" destination="FwS-QF-aJE" id="aw8-J4-Nv7"/>
-                        <segue destination="2g8-eD-LPm" kind="show" identifier="welcomeToFinishReg" id="Uig-b2-sLZ"/>
+                        <segue destination="2g8-eD-LPm" kind="presentation" identifier="welcometoregistration" id="Uig-b2-sLZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -261,7 +261,7 @@
                         <viewLayoutGuide key="safeArea" id="IbI-1F-hAT"/>
                     </view>
                     <connections>
-                        <outlet property="avatarImage" destination="Whg-0F-Uh5" id="0Sh-5e-eGH"/>
+                        <outlet property="avatarImageField" destination="Whg-0F-Uh5" id="nQy-eh-Ora"/>
                         <outlet property="cityTextField" destination="HoH-PS-kxC" id="nY8-4q-0dv"/>
                         <outlet property="countryTextField" destination="9o4-pw-zgH" id="qxl-Pp-tSn"/>
                         <outlet property="nameTextField" destination="dEQ-T7-DxX" id="m7B-V3-rcK"/>
@@ -271,7 +271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lgh-f3-TOu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1256.521739130435" y="99.776785714285708"/>
+            <point key="canvasLocation" x="1017" y="100"/>
         </scene>
     </scenes>
     <resources>

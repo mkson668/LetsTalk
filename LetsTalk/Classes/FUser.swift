@@ -413,9 +413,10 @@ func getUsersFromFirestore(withIds: [String], completion: @escaping (_ usersArra
     }
 }
 
-
+// store tha dictonary data into firbase
 func updateCurrentUserInFirestore(withValues : [String : Any], completion: @escaping (_ error: Error?) -> Void) {
     
+    // get locally save data form Userdefaults
     if let dictionary = UserDefaults.standard.object(forKey: kCURRENTUSER) {
         
         var tempWithValues = withValues
