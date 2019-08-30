@@ -127,6 +127,7 @@ class FinishRegistrationViewController: UIViewController {
 
         clearTextFields()
         dismissKeyboard()
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: USER_DID_LOGIN_NOTIFICATION), object: nil, userInfo: [kUSERID : FUser.currentId()])
         
         // name is Main because "Main.sotryBoard" by default. then you have to instaitate the view controller with the identifier (tabbarcontroller in this case)
         let mainView = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainApplication") as! UITabBarController

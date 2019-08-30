@@ -275,12 +275,18 @@ class FUser {
         userDefaults.removeObject(forKey: kPUSHID)
         removeOneSignalId()
         
+        
+        // remove this user from cache
         userDefaults.removeObject(forKey: kCURRENTUSER)
+        // save
         userDefaults.synchronize()
         
+        
+        // try to log out with firebase
         do {
             try Auth.auth().signOut()
             
+            // if no error we call completion
             completion(true)
             
         } catch let error as NSError {

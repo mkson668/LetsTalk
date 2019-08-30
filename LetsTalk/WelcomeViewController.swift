@@ -43,7 +43,11 @@ class WelcomeViewController: UIViewController {
         dismissKeyboard()
         if userNameTextField.text != "" && passwordTextField.text != "" && confirmPasswordTextField.text != "" {
             if passwordTextField.text == confirmPasswordTextField.text {
-                registerUser()
+                if passwordTextField.text!.count > 4 {
+                    registerUser()
+                } else {
+                    ProgressHUD.showError("Password should be longer than 4 characters")
+                }
             } else {
                 ProgressHUD.showError("Password and confirm password do not match!")
             }
@@ -94,6 +98,7 @@ class WelcomeViewController: UIViewController {
         ProgressHUD.dismiss()
         clearTextFields()
         dismissKeyboard()
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: USER_DID_LOGIN_NOTIFICATION), object: nil, userInfo: [kUSERID : FUser.currentId()])
     
         
         // name is Main because "Main.sotryBoard" by default. then you have to instaitate the view controller with the identifier (tabbarcontroller in this case)
