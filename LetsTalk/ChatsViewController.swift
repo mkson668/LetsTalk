@@ -12,7 +12,8 @@ class ChatsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // fancy titles
+        navigationController?.navigationBar.prefersLargeTitles = true
         // Do any additional setup after loading the view.
     }
     

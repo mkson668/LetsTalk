@@ -26,7 +26,15 @@ class UsersTableViewController: UITableViewController, UISearchResultsUpdating {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // fancy apple titles
+        self.title = "Users"
+        navigationItem.largeTitleDisplayMode = .never
+        // cover the extra rows
+        tableView.tableFooterView = UIView()
         
+        navigationItem.searchController = self.searchController
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
         loadUsers(filter: kCITY)
         
 
@@ -35,13 +43,23 @@ class UsersTableViewController: UITableViewController, UISearchResultsUpdating {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        
-        return 1
+        if searchController.isActive && searchController.searchBar.text != "" {
+            return 1
+        } else {
+            return allUsersGroupped.count
+        }
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if searchController.isActive && searchController.searchBar.text != "" {
+            return filteredUsers.count
+        } else {
+            // find section title
+            let sectionTitle = self.sectionTitleList[section]
+            let user = self.allUsersGroupped[sectionTitle]
+            return user!.count
+        }
         
-        return allUsers.count
     }
 
     
