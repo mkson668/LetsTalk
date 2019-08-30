@@ -22,6 +22,7 @@
 		93694BE02317DDF700F9C07E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93694BDF2317DDF700F9C07E /* SettingsViewController.swift */; };
 		93694BE223189CC400F9C07E /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93694BE123189CC400F9C07E /* UserTableViewCell.swift */; };
 		93694BE42318AA9000F9C07E /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93694BE32318AA9000F9C07E /* UsersTableViewController.swift */; };
+		93694BE6231911A000F9C07E /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93694BE5231911A000F9C07E /* ChatsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		93694BDF2317DDF700F9C07E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		93694BE123189CC400F9C07E /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		93694BE32318AA9000F9C07E /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		93694BE5231911A000F9C07E /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		B34A55507C872588821EDBF8 /* Pods-LetsTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsTalk.debug.xcconfig"; path = "Target Support Files/Pods-LetsTalk/Pods-LetsTalk.debug.xcconfig"; sourceTree = "<group>"; };
 		FF08EEE3E3C2ACA76ED94641 /* Pods_LetsTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,6 +108,7 @@
 				93694BD023154B9000F9C07E /* GoogleService-Info.plist */,
 				93694BE123189CC400F9C07E /* UserTableViewCell.swift */,
 				93694BCE23151ED900F9C07E /* WelcomeViewController.swift */,
+				93694BE5231911A000F9C07E /* ChatsViewController.swift */,
 				93694BDA23166BEC00F9C07E /* FinishRegistrationViewController.swift */,
 				93694BDF2317DDF700F9C07E /* SettingsViewController.swift */,
 				93694BE32318AA9000F9C07E /* UsersTableViewController.swift */,
@@ -271,6 +274,7 @@
 				93694BCF23151ED900F9C07E /* WelcomeViewController.swift in Sources */,
 				93694BD72316019C00F9C07E /* FCollectionReference.swift in Sources */,
 				93694BD5231550F800F9C07E /* Constants.swift in Sources */,
+				93694BE6231911A000F9C07E /* ChatsViewController.swift in Sources */,
 				93694BDB23166BEC00F9C07E /* FinishRegistrationViewController.swift in Sources */,
 				93694BD92316038900F9C07E /* HelperFunctions.swift in Sources */,
 				93694BE42318AA9000F9C07E /* UsersTableViewController.swift in Sources */,
