@@ -67,10 +67,39 @@ class UsersTableViewController: UITableViewController, UISearchResultsUpdating {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! UserTableViewCell
 
         // Configure the cell...
+        var user: FUser
         
-        cell.genenrateCellWith(fUser: allUsers[indexPath.row], indexPath: indexPath)
+        if searchController.isActive && searchController.searchBar.text != "" {
+            user = filteredUsers[indexPath.row]
+        } else {
+            let sectionTitle = self.sectionTitleList[indexPath.section]
+            let users = self.allUsersGroupped[sectionTitle]
+            user = users![indexPath.row]
+        }
+        
+        cell.genenrateCellWith(fUser: user, indexPath: indexPath)
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if searchController.isActive && searchController.searchBar.text != "" {
+            return ""
+        } else {
+            return sectionTitleList[section]
+        }
+    }
+    
+    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        if searchController.isActive && searchController.searchBar.text != "" {
+            return nil
+        } else {
+            return self.sectionTitleList
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
+        return index
     }
    
     func loadUsers(filter: String) {
@@ -118,8 +147,8 @@ class UsersTableViewController: UITableViewController, UISearchResultsUpdating {
                 }
                 
                 
-                //self.splitDataIntoSection()
-                //self.tableView.reloadData()
+                self.splitDataIntoSection()
+                self.tableView.reloadData()
             }
             
             self.tableView.reloadData()
@@ -155,4 +184,21 @@ class UsersTableViewController: UITableViewController, UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchText: searchController.searchBar.text!)
     }
+    
+    fileprivate func splitDataIntoSection() {
+        var sectionTitle: String = ""
+        for i in 0..<self.allUsers.count {
+            let currentUser = self.allUsers[i]
+            let firstChar = currentUser.firstname.first!
+            let firstCharString = "\(firstChar)"
+            if firstCharString != sectionTitle {
+                sectionTitle = firstCharString
+                self.allUsersGroupped[sectionTitle] = []
+                self.sectionTitleList.append(sectionTitle)
+            }
+            self.allUsersGroupped[firstCharString]?.append(currentUser)
+        }
+    }
+    
+    
 }
