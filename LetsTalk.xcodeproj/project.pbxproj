@@ -24,6 +24,7 @@
 		93694BE42318AA9000F9C07E /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93694BE32318AA9000F9C07E /* UsersTableViewController.swift */; };
 		93694BE6231911A000F9C07E /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93694BE5231911A000F9C07E /* ChatsViewController.swift */; };
 		93694BE82327148F00F9C07E /* ProfileViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93694BE72327148F00F9C07E /* ProfileViewTableViewController.swift */; };
+		93694BEA232771AE00F9C07E /* Recent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93694BE9232771AD00F9C07E /* Recent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		93694BE32318AA9000F9C07E /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		93694BE5231911A000F9C07E /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		93694BE72327148F00F9C07E /* ProfileViewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewTableViewController.swift; sourceTree = "<group>"; };
+		93694BE9232771AD00F9C07E /* Recent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recent.swift; sourceTree = "<group>"; };
 		B34A55507C872588821EDBF8 /* Pods-LetsTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsTalk.debug.xcconfig"; path = "Target Support Files/Pods-LetsTalk/Pods-LetsTalk.debug.xcconfig"; sourceTree = "<group>"; };
 		FF08EEE3E3C2ACA76ED94641 /* Pods_LetsTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				93694BD223154EB000F9C07E /* FUser.swift */,
+				93694BE9232771AD00F9C07E /* Recent.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93694BBD2314F04D00F9C07E /* AppDelegate.swift in Sources */,
+				93694BEA232771AE00F9C07E /* Recent.swift in Sources */,
 				93694BE223189CC400F9C07E /* UserTableViewCell.swift in Sources */,
 				93694BE82327148F00F9C07E /* ProfileViewTableViewController.swift in Sources */,
 				93694BD323154EB000F9C07E /* FUser.swift in Sources */,

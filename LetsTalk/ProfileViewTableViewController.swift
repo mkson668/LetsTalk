@@ -26,6 +26,7 @@ class ProfileViewTableViewController: UITableViewController {
     // IBactions
     
     @IBAction func messageButtonPressed(_ sender: Any) {
+        print("chat with user\(user!.fullname)")
     }
     
     @IBAction func blockUserButtonPressed(_ sender: Any) {
