@@ -29,6 +29,20 @@ class ProfileViewTableViewController: UITableViewController {
     }
     
     @IBAction func blockUserButtonPressed(_ sender: Any) {
+        var currentBlockedids = FUser.currentUser()!.blockedUsers
+        if currentBlockedids.contains(user!.objectId) {
+            let ind = currentBlockedids.firstIndex(of: user!.objectId)
+            currentBlockedids.remove(at: ind!)
+        } else {
+             currentBlockedids.append(user!.objectId)
+        }
+        updateCurrentUserInFirestore(withValues: [kBLOCKEDUSERID: currentBlockedids]) { (err) in
+            if err != nil {
+                print("error updating user\(err!.localizedDescription)")
+                return
+            }
+            self.updateBlockStatus()
+        }
     }
     
     // MARK: - Table view data source
@@ -45,7 +59,7 @@ class ProfileViewTableViewController: UITableViewController {
 
     // to reomve the section ttiles we need the folowing 2 methods
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return ""
+        return " "
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -54,9 +68,13 @@ class ProfileViewTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 {
-            return 0.0
+            return 0
         }
-        return 30.0
+        return 30
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
     }
    
     func setupUI() {
@@ -66,9 +84,9 @@ class ProfileViewTableViewController: UITableViewController {
             phoneNumberLabel.text = user?.phoneNumber
             
             updateBlockStatus()
-            imageFromData(pictureData: user!.avatar) { (avatarImmage) in
-                if avatarImmage != nil {
-                    self.avatarImageView.image = avatarImmage?.circleMasked
+            imageFromData(pictureData: user!.avatar) { (avatarImage) in
+                if avatarImage != nil {
+                    self.avatarImageView.image = avatarImage?.circleMasked
                 }
             }
         }
